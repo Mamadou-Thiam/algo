@@ -1,0 +1,28 @@
+ALGORITHM phrase
+VAR
+    // declaration des variables
+    phrase="Bienvenue à gomycode."
+BEGIN
+    write("donnez une phrase qui se termine par un point (.)")
+    read(phrase)
+    IF (phrase[phrase.length] !==) "." THEN
+     write("vous devez donnez une phrase")
+     read(phrase)
+    END_IF
+
+    nbr_mot:=1
+    FOR i FROM 0 TO tab.length STEP 1  DO
+        IF (phrase[i]=== ' ') THEN
+            nbr_mot=nbr_mot+1
+        END_IF
+    END_FOR
+    write("le nombre de mot est", nbr_mot)
+
+    nbr_voyelle:=1
+    FOR i FROM 0 TO tab.length STEP 1  DO
+        IF (phrase[i=== 'aeiouy']) THEN
+            nbr_voyelle=nbr_voyelle+1
+        END_IF
+    END_FOR
+    write("le nombre de mot est", nbr_voyelle)
+END
